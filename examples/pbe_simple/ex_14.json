@@ -1,0 +1,9 @@
+{
+    "program": "sum := ??",
+    "linv": "lambda d: isinstance(d['a'], str)",
+    "pvars": "['a', 'sum']",
+    "P": ["lambda d: d['a'] == 'fun synthesis' and d['sum'] == 0", "lambda d: d['a'] == 'amazing synthesizer' and d['sum'] == 0"],
+    "Q": ["lambda d: d['a'] == 'fun synthesis' and d['sum'] == 13","lambda d: d['a'] == 'amazing synthesizer' and d['sum'] == 19"]
+}
+
+

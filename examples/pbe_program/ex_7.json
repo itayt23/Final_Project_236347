@@ -1,0 +1,8 @@
+{
+    "program": "i := ?? ; if x = 'Yes' then y := y concat 'A' else y := y concat 'B'",
+    "linv": "lambda d: d['y'] >= 0",
+    "pvars": "['x','i', 'y']",
+    "vars_type": "{'i': 'Int','x': 'String', 'y': 'String'}",
+    "P": ["lambda d: d['x'] == 'Yes' and d['y'] == '' and d['i'] == 0","lambda d: d['x'] == 'No' and d['y'] == '' and d['i'] == 0"],
+    "Q": ["lambda d: d['x'] == 'Yes' and d['y'] == 'A' and d['i'] == 1","lambda d: d['x'] == 'No' and d['y'] == 'B' and d['i'] == 2"]
+}

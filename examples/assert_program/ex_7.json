@@ -1,0 +1,8 @@
+{
+    "program": "a := b * ?? ; assert a = b * 6 ; while b > 0 do (b := b - 1)",
+    "linv": "lambda d: d['b'] >= 0",
+    "pvars": "['b', 'a']",
+    "vars_type": {"b": "Int", "a": "Int"},
+    "P": ["lambda d: d['a'] == 0 and d['b'] == 6"],
+    "Q": ["lambda d: d['a'] == 0 and d['b'] == 0"]
+}
