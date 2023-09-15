@@ -27,7 +27,8 @@ We divided the given and premade examples to "Simple" and "Part Of Program" for 
 
 ## Synthesizer Limits:
 - Cannot hanlde sketch holes inside the while loop.
-- Cannot hanlde ASSERT expression inside the while loop. 
+- Cannot hanlde ASSERT expression inside the while loop.
+- Cannot handle while loop unroll greater than 4.
 - We've limited the synthesis depth to 5 , i.e. we check programs of size 5 or less - this could be changed by the code itself - for pbe in line 210 and for assert in line 170 in wp.py file.
 - we've limited the SMT solver check to 2 seconds per program , this could be changed by the code itself in line 239 in wp.py.
 
@@ -51,6 +52,7 @@ We divided the given and premade examples to "Simple" and "Part Of Program" for 
 - LINV should be of format: "S1 op constant and S2 op constant" A boolean condition. i.e. a>=0 and b<1
 - P should be of format: "S1==constant and S2==constant and..." i.e. S1==0 and S2==45 and my_variable==13
 - Q should be of format: Identical to P format.
+  
 (use the given examples for help ;) )
 
 ## Setup
